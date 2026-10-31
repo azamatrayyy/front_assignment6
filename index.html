@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 6 - jQuery Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="light-theme">
+
+
+  <header>
+    <h1 id="main-title">Welcome to My Portfolio</h1>
+    <p id="personal-headline">Computer Science Student</p>
+    <p class="intro-text">Hello! My name is Azamat. Welcome to my personal interactive webpage!</p>
+
+    <div class="theme-buttons">
+      <button id="btn-light">Light Theme</button>
+      <button id="btn-dark">Dark Theme</button>
+      <button id="btn-change-text">Change Headline</button>
+    </div>
+  </header>
+
+  <hr>
+
+  
+  <section id="about-section">
+    <h2>About Me</h2>
+    <p>I am a second-year student studying CS.</p>
+    <p id="status-message">Status: Currently learning jQuery!</p>
+    
+    <div class="effects-buttons">
+      <button id="btn-hide">Hide Status</button>
+      <button id="btn-show">Show Status</button>
+      <button id="btn-toggle">Toggle Status</button>
+    </div>
+  </section>
+
+  <hr>
+
+
+  <section id="gallery-section">
+    <h2>My Gallery</h2>
+    <div class="gallery">
+      <img class="gallery-img" src="mario_PNG125.png" alt="Mario">
+      <img class="gallery-img" src="images.png" alt="Sponge Bob">
+    </div>
+    <br>
+    <button id="btn-fade-out">Fade Out Images</button>
+    <button id="btn-fade-in">Fade In Images</button>
+    <button id="btn-fade-toggle">Fade Toggle Images</button>
+  </section>
+
+  <hr>
+
+  <section id="acc-section">
+    <h2>My Favorites (Collapsible Panels)</h2>
+    
+    <div class="accordion-item">
+      <h3 class="acc-header">My Favorite Music</h3>
+      <div class="acc-content">
+        <p>I enjoy listening to indie rock, pop, and acoustic music while coding.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="acc-header">My Favorite Movie</h3>
+      <div class="acc-content">
+        <p>My favorite movies include Interstellar, Troy, and historical feature films.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h3 class="acc-header">My Favorite Subject</h3>
+      <div class="acc-content">
+        <p>Web Development (Frontend), Political Science, and Calculus</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+
+  <section id="skills-section">
+    <h2>Technical Skills</h2>
+    <ul id="skills-list">
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript</li>
+      <li>C# / .NET</li>
+      <li>Git & GitHub</li>
+    </ul>
+
+    <input type="text" id="skill-input" placeholder="Enter new skill">
+    <br><br>
+    <button id="btn-append">Add Skill (Append)</button>
+    <button id="btn-prepend">Prepend Skill</button>
+    <button id="btn-remove">Remove Last Skill</button>
+  </section>
+
+  <hr>
+
+  <section id="links-section">
+    <h2>Social Links</h2>
+    <p>Visit social media: <a id="social-link" href="https://github.com" target="_blank">GitHub</a></p>
+    <button id="btn-change-link">Change Link to YouTube</button>
+  </section>
+
+  <hr>
+
+  <section id="form-section">
+    <h2>Live Preview Form</h2>
+    <form id="user-form">
+      <div>
+        <label for="name-input">Name: </label>
+        <input type="text" id="name-input" placeholder="Your name">
+      </div>
+      <br>
+      <div>
+        <label for="email-input">Email: </label>
+        <input type="email" id="email-input" placeholder="Your email">
+      </div>
+    </form>
+
+    <div class="live-preview">
+      <h3>Live Output:</h3>
+      <p>Name: <span id="preview-name">---</span></p>
+      <p>Email: <span id="preview-email">---</span></p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="animation-section">
+    <h2>Skill Bars Animation</h2>
+    <button id="btn-animate-skills">Animate My Skills</button>
+    
+    <div class="skill-bar-container">
+      <p>HTML / CSS</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar-fill" id="bar-html" data-width="90%"></div>
+      </div>
+
+      <p>JavaScript / jQuery</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar-fill" id="bar-js" data-width="75%"></div>
+      </div>
+
+      <p>C# Programming</p>
+      <div class="skill-bar-bg">
+        <div class="skill-bar-fill" id="bar-cs" data-width="80%"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

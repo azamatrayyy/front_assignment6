@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+
+.light-theme {
+  background-color: lightyellow;
+  color: #333333;
+}
+
+.dark-theme {
+  background-color: #222222;
+  color: #f4f4f4;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.acc-header {
+  background-color: #e2e2e2;
+  color: #333;
+  padding: 10px;
+  margin: 5px 0 0 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.acc-content {
+  display: none; 
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.dark-theme .acc-header {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-theme .acc-content {
+  background-color: #333;
+  border-color: #555;
+}
+
+
+.gallery-img {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+
+.skill-bar-container {
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+.skill-bar-bg {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.skill-bar-fill {
+  background-color: #007bff;
+  height: 100%;
+  width: 0%; 
+}
